@@ -69,7 +69,7 @@ a,b,c,d,e=st.columns(5)
 with a:
     st.image("img/download (2).jpeg",caption="Prabhas")
 with b:
-    st.image("img/download (23).jpeg",caption="Hrithik roshan")
+    st.image("img/images (18).jpeg",caption="Hrithik roshan")
 with c:
     st.image("img/download (38).jpeg",caption="Leo messi")
 with d:
