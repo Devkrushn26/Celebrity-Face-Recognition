@@ -67,15 +67,15 @@ st.subheader("Upload the photo to the below mentioned persons")
 a,b,c,d,e=st.columns(5)
 
 with a:
-    st.image("img\download (2).jpeg",caption="Prabhas")
+    st.image("img/download (2).jpeg",caption="Prabhas")
 with b:
-    st.image("img\download (23).jpeg",caption="Hrithik roshan")
+    st.image("img/download (23).jpeg",caption="Hrithik roshan")
 with c:
-    st.image("img\download (38).jpeg",caption="Leo messi")
+    st.image("img/download (38).jpeg",caption="Leo messi")
 with d:
-    st.image("img\images (8).jpeg",caption="Smriti mandhana")
+    st.image("img/images (8).jpeg",caption="Smriti mandhana")
 with e:
-    st.image("img\download (6).jpeg",caption="Yami gautam")
+    st.image("img/download (6).jpeg",caption="Yami gautam")
 
 st.write("""Upload an image to classify the person.""")
 
