@@ -78,9 +78,9 @@ with e:
     st.image("img/download (6).jpeg",caption="Yami gautam")
 
 st.write("""Upload an image to classify the person.""")
-st.write("""Make sure the photo format is JPG or PNG.""")
+st.write("""Make sure the photo format is JPG or JPEG.""")
 
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg",])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
