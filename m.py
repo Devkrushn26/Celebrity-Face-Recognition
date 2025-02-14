@@ -124,3 +124,23 @@ if uploaded_file is not None:
                 st.write(f"{reverse_dict.get(i)}   :{np.round(prob*100,2)}%")
 st.markdown("---")
 st.markdown("# Developed by **Devkrushn Domadiya**")
+
+# Footer
+st.markdown("""
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    <div class="footer">
+        Developed by Devkrushn Domadiya 🚀
+    </div>
+""", unsafe_allow_html=True)
