@@ -122,8 +122,7 @@ if uploaded_file is not None:
 
             for i, prob in enumerate(probabilities):
                 st.write(f"{reverse_dict.get(i)}   :{np.round(prob*100,2)}%")
-st.markdown("---")
-st.markdown("# Developed by **Devkrushn Domadiya**")
+
 
 # Footer
 st.markdown("""
