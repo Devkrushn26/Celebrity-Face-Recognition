@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+pip install opencv-python
 import cv2
 import pywt
 import joblib
