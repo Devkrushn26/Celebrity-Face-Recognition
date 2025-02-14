@@ -78,6 +78,7 @@ with e:
     st.image("img/download (6).jpeg",caption="Yami gautam")
 
 st.write("""Upload an image to classify the person.""")
+st.write("""Make sure the photo format is JPG or PNG.""")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
