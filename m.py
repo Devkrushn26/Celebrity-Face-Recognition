@@ -11,10 +11,10 @@ from sklearn.pipeline import Pipeline
 import numpy as np
 
 # Load trained model and class dictionary
-with open(r"D:\p_one\model\saved_model.pkl", "rb") as file:
+with open(r"saved_model.pkl", "rb") as file:
     model = joblib.load(file)
 
-with open(r"D:\p_one\model\class_dictionary.json", "r") as file:
+with open(r"class_dictionary.json", "r") as file:
     class_dict = json.load(file)
 
 # Function to detect face and ensure two eyes are present
