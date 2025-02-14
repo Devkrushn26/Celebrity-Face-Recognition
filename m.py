@@ -10,14 +10,14 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 import numpy as np
 
-# Load trained model and class dictionary
+
 with open(r"saved_model.pkl", "rb") as file:
     model = joblib.load(file)
 
 with open(r"class_dictionary.json", "r") as file:
     class_dict = json.load(file)
 
-# Function to detect face and ensure two eyes are present
+
 def get_cropped_img_if_2_eyes(img):
     eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -36,7 +36,6 @@ def get_cropped_img_if_2_eyes(img):
     
     return cropped_faces
 
-# Function for Wavelet Transform
 def w2d(img, mode='db1', level=5):
     imga = img
     imga = cv2.cvtColor(imga,cv2.COLOR_RGB2GRAY)
@@ -97,7 +96,7 @@ if uploaded_file is not None:
        
         processed_images=[w2d(face) for face in cropped_faces]
         for i, img in enumerate(processed_images):
-            img = img.reshape(1, -1)  # Ensure shape consistency
+            img = img.reshape(1, -1) 
 
             if not isinstance(model, Pipeline):
                 img = scaler.transform(img)
@@ -125,7 +124,7 @@ if uploaded_file is not None:
                 st.write(f"{reverse_dict.get(i)}   :{np.round(prob*100,2)}%")
 
 
-# Footer
+
 st.markdown("""
     <style>
         .footer {
