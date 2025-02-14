@@ -73,7 +73,7 @@ with b:
 with c:
     st.image("img/download (38).jpeg",caption="Leo messi")
 with d:
-    st.image("img/images (8).jpeg",caption="Smriti mandhana")
+    st.image("img/download (4).jpeg",caption="Smriti mandhana")
 with e:
     st.image("img/download (6).jpeg",caption="Yami gautam")
 
